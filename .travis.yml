@@ -12,4 +12,4 @@ before_install:
 #- docker run carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec rake test"
       
 deploy:
-  script: bash scriptname.sh #runs scirptname.sh script from master (kann auch unter ordner/datei liegen)
+  script: bash test.sh #runs scirptname.sh script from master (kann auch unter ordner/datei liegen)
