@@ -1,3 +1,5 @@
 language: bash
       
-script: bash test.sh #runs scirptname.sh script from master (kann auch unter ordner/datei liegen)
+script: 
+      - bash test.sh
+      - bash TC_1.sh
