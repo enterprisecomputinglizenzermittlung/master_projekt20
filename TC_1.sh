@@ -1,4 +1,4 @@
 cd ~/scancode 
-./extractcode ~/enterprisecomputinglizenzermittlung/master_projekt20/emacs-common-non-dfsg_26.1+1-1_all.deb
+./extractcode ~/.netrc/enterprisecomputinglizenzermittlung/master_projekt20/emacs-common-non-dfsg_26.1+1-1_all.deb
 ./scancode -clip --json-pp - samples
 exit 0
