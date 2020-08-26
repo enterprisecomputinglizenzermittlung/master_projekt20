@@ -1,8 +1,8 @@
 language: bash
 
 install:
-- git clone https://github.com/tern-tools/tern.git tern
-- git clone https://github.com/nexB/scancode-toolkit.git scancode
+- git clone https://github.com/tern-tools/tern.git ~/tern
+- git clone https://github.com/nexB/scancode-toolkit.git ~/scancode
 
       
 script: 
