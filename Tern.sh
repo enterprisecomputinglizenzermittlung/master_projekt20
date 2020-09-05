@@ -1,4 +1,4 @@
-apt-get install python3-venv
+sudo apt-get install python3-venv
 cd ~/tern
 python3 -m venv Py3
 cd Py3
