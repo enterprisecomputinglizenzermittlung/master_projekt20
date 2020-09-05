@@ -8,12 +8,6 @@ python:
 services:
   - docker
   
-deploy:
-  provider: pypi
-  username: ...
-  password: ...
-  distributions: "sdist bdist_wheel"
-  
 before_install:
   - sudo apt-get update
   - sudo apt-get install python3-venv
