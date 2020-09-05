@@ -4,21 +4,13 @@ ls
 cd ~/tern
 sudo python3 -m venv ternenv
 cd ternenv
+source bin/activate
 echo --lib/python36/sitepackages----
 cd lib/python3.6/site-packages
 ls
-echo ---BEFORE WHEEL INSTALL---
-pip install wheel
-echo ---AFTER WHEEL INSTALL---
-cd ..
-cd ..
-cd ..
-source bin/activate
-cd lib/python3.6/site-packages
+sudo pip install wheel
+echo ----------------------------------
 ls
-echo ---BEFORE WHEEL INSTALL---
-pip install wheel
-echo ---AFTER WHEEL INSTALL---
 cd ..
 cd ..
 cd ..
