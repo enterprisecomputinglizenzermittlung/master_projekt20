@@ -2,6 +2,9 @@ language: bash
 
 services:
   - docker
+  
+before_install:
+  - sudo apt-get install python3-venv
 
 install:
 - echo $PWD
