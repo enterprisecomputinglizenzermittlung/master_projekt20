@@ -1,16 +1,18 @@
-echo ------------Home/Travis------------- 
-cd /home/travis/virtualenv/python3.6.10/lib/python3.6/site-packages
-ls
-echo ------------build/ent../master_projekt-------------
-cd ~/build/enterprisecomputinglizenzermittlung/master_projekt20
+echo ------Home/Travis/virtualenv---- 
+cd /home/travis/virtualenv
 ls
 echo ------------~/tern-------------
 cd ~/tern
 ls
 sudo python3 -m venv ternenv
-echo ------------ternenv-------------
+echo -----------ternenv-------------
 cd ternenv
 ls
+echo -----------lib->python36-------------
+cd lib/python3.6
+ls
+cd ..
+cd ..
 source bin/activate
 #/home/travis/virtualenv/python3.6.10/lib/python3.6/site-packages/wheel/setup.py 
 sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py lib/python3.6/site-packages/wheel/setup.py
