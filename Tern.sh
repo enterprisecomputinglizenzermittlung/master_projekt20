@@ -14,6 +14,14 @@ cd ..
 cd ..
 cd ..
 source bin/activate
+cd lib/python3.6/site-packages
+ls
+echo ---BEFORE WHEEL INSTALL---
+pip install wheel
+echo ---AFTER WHEEL INSTALL---
+cd ..
+cd ..
+cd ..
 #/home/travis/virtualenv/python3.6.10/lib/python3.6/site-packages/wheel/setup.py 
 sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py lib/python3.6/site-packages/wheel/setup.py
 #lib/python3.6/site-packages/wheel/setup.py bdist_wheel
