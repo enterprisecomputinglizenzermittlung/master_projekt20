@@ -8,9 +8,10 @@ sudo python3 -m venv ternenv
 echo -----------ternenv-------------
 cd ternenv
 ls
-echo -----------lib->python36-------------
-cd lib/python3.6
+echo --lib/python36/sitepackages----
+cd lib/python3.6/site-packages
 ls
+cd ..
 cd ..
 cd ..
 source bin/activate
