@@ -8,7 +8,7 @@ source bin/activate
 #/home/travis/virtualenv/python3.6.10/lib/python3.6/site-packages/wheel/setup.py 
 #sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py lib/python3.6/site-packages/wheel/setup.py
 sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py /usr/local/lib/python2.7/dist-packages/wheel/setup.py
-cd /usr/local/lib/python2.7/dist-packages
+cd /usr/local/lib/python2.7/dist-packages/wheel
 echo ----------------DISTPACK----------------
 ls
 cd ~/tern/ternenv
