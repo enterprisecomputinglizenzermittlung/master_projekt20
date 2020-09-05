@@ -1,16 +1,15 @@
-echo ------Home/Travis/virtualenv---- 
-cd /home/travis/virtualenv
+echo ------Home/Travis-------------- 
+cd /home/travis
 ls
-echo ------------~/tern-------------
 cd ~/tern
-ls
 sudo python3 -m venv ternenv
-echo -----------ternenv-------------
 cd ternenv
-ls
 echo --lib/python36/sitepackages----
 cd lib/python3.6/site-packages
 ls
+echo ---BEFORE WHEEL INSTALL---
+pip install wheel
+echo ---AFTER WHEEL INSTALL---
 cd ..
 cd ..
 cd ..
