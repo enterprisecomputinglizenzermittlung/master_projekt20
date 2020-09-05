@@ -8,4 +8,5 @@ install:
       
 script: 
       - bash test.sh
-      - bash Scancode.sh
+      #- bash Scancode.sh
+      - bash Tern.sh
