@@ -16,4 +16,7 @@ sudo source bin/activate
 echo Step 4: Install Tern
 sudo python3 -m pip install tern
 
+echo Step 5: Execute Testscan
+sudo tern report -o output.txt -i debian:buster
+
 exit $?
