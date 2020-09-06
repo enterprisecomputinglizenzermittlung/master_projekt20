@@ -15,7 +15,8 @@ ls
 cd ~/tern/ternenv
 #lib/python3.6/site-packages/wheel/setup.py bdist_wheel
 #python lib/python3.6/site-packages/wheel/setup.py bdist_wheel
-python /usr/local/lib/python2.7/dist-packages/setup.py bdist_wheel
+#python /usr/local/lib/python2.7/dist-packages/setup.py bdist_wheel
+python ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py bdist_wheel
 sudo pip install tern
 tern report -o output.txt -i debian:buster
 ls
