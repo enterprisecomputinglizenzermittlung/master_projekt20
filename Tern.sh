@@ -22,6 +22,7 @@ cd site-packages
 echo -----------SP------------
 ls
 sudo pip install wheel
+ls
 cd ~/tern/ternenv
 sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py ~/tern/ternenv/lib/python3.6/site-packages/wheel
 python lib/python3.6/site-packages/wheel/setup.py bdist_wheel
