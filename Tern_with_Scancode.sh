@@ -9,7 +9,7 @@ echo Step 2: Create Python3 Venv
 cd ~/tern
 sudo python3 -m venv scanenv
 
-echo Step 3: Activate Python3 Venv 
+echo Step 3: Activate Python3 Venv for Tern+Scancode
 cd scanenv
 sudo source bin/activate
 
