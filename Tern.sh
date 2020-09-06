@@ -26,6 +26,6 @@ ls
 cd ~/tern/ternenv
 
 echo Install Tern
-sudo pip install tern
+sudo python 3 -m pip install tern
 
 exit 0
