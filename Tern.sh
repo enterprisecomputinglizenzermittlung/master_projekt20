@@ -12,10 +12,18 @@ cd ternenv
 source bin/activate
 #/home/travis/virtualenv/python3.6.10/lib/python3.6/site-packages/wheel/setup.py 
 ls
-sudo apt-get install -y python-setuptools
-sudo pip install wheel
+cd lib
+echo -----------lib------------
 ls
-sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py lib/python3.6/site-packages/wheel
+cd python3.6
+echo -----------PY36------------
+ls
+cd site-packages
+echo -----------SP------------
+ls
+sudo pip install wheel
+cd ~/tern/ternenv
+sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py ~/tern/ternenv/lib/python3.6/site-packages/wheel
 python lib/python3.6/site-packages/wheel/setup.py bdist_wheel
 sudo pip install tern
 tern report -o output.txt -i debian:buster
