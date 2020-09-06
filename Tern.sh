@@ -1,4 +1,5 @@
-echo ------2.7 DIST-------------- 
+echo EOF 
+------2.7 DIST-------------- 
 cd /usr/local/lib/python2.7/dist-packages/wheel
 ls
 echo ------MASTERPROJEKT-------------- 
@@ -29,4 +30,12 @@ python lib/python3.6/site-packages/wheel/setup.py bdist_wheel
 sudo pip install tern
 tern report -o output.txt -i debian:buster
 ls
+EOF
+
+cd ~/tern
+sudo python3 -m venv ternenv
+cd ternenv
+source bin/activate
+pip install tern
+
 exit 0
