@@ -16,4 +16,7 @@ sudo source bin/activate
 echo Step 4: Install Tern and Scancode Toolkit
 sudo python3 -m pip install tern scancode-toolkit
 
+echo Step 5: Execute Testscan with Tern + Scancode
+tern report -x scancode -i golang:1.12-alpine
+
 exit $?
