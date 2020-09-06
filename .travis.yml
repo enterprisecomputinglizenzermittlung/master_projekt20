@@ -19,10 +19,10 @@ install:
 
 jobs:
   include:
-    - stage: test
-      script: 
-        - bash test.sh
-    - stage: Scancode
+   # - stage: test
+   #   script: 
+   #     - bash test.sh
+    - stage: Tern
       script:
-        - bash Scancode.sh
+   #     - bash Scancode.sh
         - bash Tern.sh
