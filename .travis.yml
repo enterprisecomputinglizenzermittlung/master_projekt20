@@ -17,8 +17,11 @@ install:
 - git clone https://github.com/tern-tools/tern.git ~/tern
 #- git clone https://github.com/nexB/scancode-toolkit.git ~/scancode
 
-      
-script: 
-      - bash test.sh
-      #- bash Scancode.sh
-      - bash Tern.sh
+jobs:
+  include:
+    - stage: test
+      script: 
+        - bash test.sh
+    - stage: Scancode
+      script:
+        - bash Scancode.sh
