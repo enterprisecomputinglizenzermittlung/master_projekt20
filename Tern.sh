@@ -13,14 +13,12 @@ source bin/activate
 #sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py lib/python3.6/site-packages/wheel/setup.py
 #sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py /usr/local/lib/python2.7/dist-packages/wheel
 cd /usr/local/lib/python2.7/dist-packages/wheel
-sudo chmod a+x setup.py
 echo ----------------DISTPACK----------------
 ls
 cd ~/tern/ternenv
 ls
 #lib/python3.6/site-packages/wheel/setup.py bdist_wheel
 #python lib/python3.6/site-packages/wheel/setup.py bdist_wheel
-python setup.py bdist_wheel
 #python /usr/local/lib/python2.7/dist-packages/setup.py bdist_wheel
 sudo pip install tern
 tern report -o output.txt -i debian:buster
