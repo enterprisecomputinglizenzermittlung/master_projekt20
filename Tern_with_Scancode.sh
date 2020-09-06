@@ -7,10 +7,10 @@ sudo apt-get install python3-pip
 
 echo Step 2: Create Python3 Venv 
 cd ~/tern
-sudo python3 -m venv ternenv
+sudo python3 -m venv scanenv
 
 echo Step 3: Activate Python3 Venv 
-cd ternenv
+cd scanenv
 sudo source bin/activate
 
 echo Step 4: Install Tern and Scancode Toolkit
