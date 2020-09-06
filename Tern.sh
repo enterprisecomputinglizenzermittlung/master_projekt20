@@ -9,7 +9,7 @@ sudo python3 -m venv ternenv
 
 echo Activate Python3 Venv 
 cd ternenv
-source bin/activate
+sudo source bin/activate
 
 echo Copy setup.py into Tern Venv directory
 sudo cp ~/build/enterprisecomputinglizenzermittlung/master_projekt20/setup.py ~/tern/ternenv/lib/python3.6/site-packages/wheel/setup.py
@@ -26,6 +26,6 @@ ls
 cd ~/tern/ternenv
 
 echo Install Tern
-pip install tern
+sudo pip install tern
 
 exit 0
