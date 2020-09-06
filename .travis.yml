@@ -25,3 +25,4 @@ jobs:
     - stage: Scancode
       script:
         - bash Scancode.sh
+        - bash Tern.sh
