@@ -27,3 +27,4 @@ jobs:
       script:
    #     - bash Scancode.sh
         - bash Tern.sh
+        - bash Tern_with_Scancode.sh
