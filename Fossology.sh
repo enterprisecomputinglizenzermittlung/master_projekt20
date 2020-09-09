@@ -24,8 +24,7 @@ sudo /etc/init.d/fossology start
 echo Steop 7: Ninka and Nomos
 echo Nomos
 cd src/nomos
-sudo make install 
-sudo nomos ../../LICENSE
+echo sudo make install 
 sudo ./agent/nomos ../../LICENSE
 cd ../..
 
@@ -34,5 +33,8 @@ cd src/ninka
 sudo make install
 sudo ninka ../../LICENSE
 sudo ./agent/ninka ../../LICENSE
+cd /usr/local/bin/ninka
+sudo ./ninka ~/fossologyLICENSE
+sudo ./ninka/ninka ~/fossologyLICENSE
 
 exit $?
