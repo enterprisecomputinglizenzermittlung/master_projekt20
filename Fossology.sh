@@ -35,6 +35,5 @@ sudo ninka ../../LICENSE
 sudo ./agent/ninka ../../LICENSE
 cd /usr/local/bin/
 sudo ./ninka ~/fossologyLICENSE
-sudo ./ninka/ninka ~/fossologyLICENSE
 
 exit $?
