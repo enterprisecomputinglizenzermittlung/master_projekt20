@@ -38,6 +38,8 @@ ls
 echo sudo find . -name *ninka*
 sudo find . -name *ninka*
 cd ~/fossology/src
+ls
 sudo ./ninka ~/fossology/LICENSE
+./ninka ~/fossology/LICENSE
 
 exit $?
