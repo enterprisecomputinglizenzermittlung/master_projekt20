@@ -17,7 +17,7 @@ install:
 - echo $PWD
 #- git clone https://github.com/tern-tools/tern.git ~/tern
 #- git clone https://github.com/nexB/scancode-toolkit.git ~/scancode
- - git clone https://github.com/fossology/fossology.git ~/fossology
+- git clone https://github.com/fossology/fossology.git ~/fossology
 
 jobs:
   include:
