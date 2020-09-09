@@ -33,6 +33,8 @@ cd src/ninka
 sudo make install
 sudo ninka ../../LICENSE
 sudo ./agent/ninka ../../LICENSE
+cd /
+sudo find . -name ninka
 cd /usr/local/bin/
 sudo ./ninka ~/fossologyLICENSE
 
