@@ -22,7 +22,7 @@ echo Step 6: Start Scheduler Daemon
 sudo /etc/init.d/fossology start
 
 echo Steop 7: -- MISSING REPORT COMMAND --
-nomos LICENSE
-ninka LICENSE
+./src/nomos/agent/nomos LICENSE
+./src/ninka/agent/ninka LICENSE
 
 exit $?
