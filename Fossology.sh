@@ -29,17 +29,11 @@ sudo ./agent/nomos ../../LICENSE
 cd ../..
 
 echo Ninka
-cd src/ninka
-sudo make install
-sudo ninka ../../LICENSE
-sudo ./agent/ninka ../../LICENSE
-cd /
-ls
-echo sudo find . -name *ninka*
-sudo find . -name *ninka*
-cd ~/fossology/src
+cd install/scripts
+sudo ./install-ninka.sh
+cd /usr/local/bin
+echo /usr/local/bin
 ls
 sudo ./ninka ~/fossology/LICENSE
-./ninka ~/fossology/LICENSE
 
 exit $?
