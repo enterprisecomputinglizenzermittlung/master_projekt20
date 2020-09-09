@@ -37,7 +37,7 @@ cd /
 ls
 echo sudo find . -name *ninka*
 sudo find . -name *ninka*
-cd ~/fossology/ninka
+cd ~/fossology/src
 sudo ./ninka ~/fossology/LICENSE
 
 exit $?
