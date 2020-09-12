@@ -1,0 +1,3 @@
+cd ~/scancode 
+./configure
+exit $?

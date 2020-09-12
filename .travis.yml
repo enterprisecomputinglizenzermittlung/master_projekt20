@@ -3,30 +3,18 @@ language: bash
 dist: bionic
 
 python:
-  - "3.6"
+    - "3.6"
 
 services:
-  - docker
+    - docker
   
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install python3-venv
-  - sudo apt-get install python-setuptools
+    - sudo apt-get update
 
 install:
-- echo $PWD
-#- git clone https://github.com/tern-tools/tern.git ~/tern
-#- git clone https://github.com/nexB/scancode-toolkit.git ~/scancode
-- git clone https://github.com/fossology/fossology.git ~/fossology
+    - ./Install_Scripts/Clone_Repositories.sh
+    - ./Install_Scripts/Scancode_Install.sh
+    - ./Install_Scripts/Tern_Install.sh
+    - ./Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
-jobs:
-  include:
-   # - stage: test
-   #   script: 
-   #     - bash test.sh
-    - stage: Tern
-      script:
-   #     - bash Scancode.sh
-   #     - bash Tern.sh
-   #     - bash Tern_with_Scancode.sh
-         - bash Fossology.sh
+

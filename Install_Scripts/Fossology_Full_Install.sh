@@ -1,3 +1,5 @@
+echo Installing FOSSology
+
 echo Step 1: Install Dependencies
 cd ~/fossology
 sudo utils/fo-installdeps
@@ -20,20 +22,5 @@ sudo /usr/local/etc/fossology/mods-enabled/scheduler/agent/fo_scheduler -t
 
 echo Step 6: Start Scheduler Daemon
 sudo /etc/init.d/fossology start
-
-echo Steop 7: Ninka and Nomos
-echo Nomos
-cd src/nomos
-echo sudo make install 
-sudo ./agent/nomos ../../LICENSE
-cd ../..
-
-echo Ninka
-cd install/scripts
-sudo ./install-ninka.sh
-cd /usr/local/bin
-echo /usr/local/bin
-ls
-sudo ./ninka ~/fossology/LICENSE
 
 exit $?
