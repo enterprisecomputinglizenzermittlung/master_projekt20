@@ -10,8 +10,8 @@ sudo apt-get install python3-pip#
 ls
 
 echo Calling Tern_Standalone installation script...
-sudo . ./Tern_Standalone_Install.sh
+sudo bash ./Tern_Standalone_Install.sh
 
 echo Calling Tern_With_ScanCode_Extension installation script...
-sudo . ./Tern_with_Scancode_Install.sh
+sudo source ./Tern_with_Scancode_Install.sh
 
