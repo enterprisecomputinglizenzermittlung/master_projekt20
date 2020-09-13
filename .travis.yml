@@ -25,4 +25,4 @@ jobs:
     - stage: test
       script: 
         - cd Test_Scripts
-        - bash Test.sh
+        - bash Create_Deb_Pgk.sh
