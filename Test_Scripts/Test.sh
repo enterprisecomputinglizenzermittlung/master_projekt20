@@ -34,12 +34,14 @@ make
 echo Copy Control File for Creation
 cd $PACKAGE_BASE_DIR
 mkdir DEBIAN
-cp -p ~/Package_Creation_Files/deb_control -p $PACKAGE_BASE_DIR/DEBIAN
+cd DEBIAN
+ls
+cp -p ~/Package_Creation_Files/deb_control $PACKAGE_BASE_DIR/DEBIAN
 
 echo Create usr/bin directory for executable program
 mkdir -p usr/bin
 
-echo Copy Program to mkdir -p $PACKAGE_BASE_DIR/usr/bin
+echo Copy Program to $PACKAGE_BASE_DIR/usr/bin
 cd ~
 cp Hello_World_Program/app $PACKAGE_BASE_DIR/usr/bin
 
