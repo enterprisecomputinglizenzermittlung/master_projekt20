@@ -4,7 +4,9 @@ cd ~/fossology
 echo Step 1: Nomos installation
 cd src/nomos
 echo sudo make install 
-sudo mv agent/nomos ~/
+cd agent
+ls
+sudo mv nomos ~/
 cd ../..
 
 echo Step 2: Ninka installation
