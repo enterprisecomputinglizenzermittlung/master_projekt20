@@ -12,7 +12,6 @@ cd install/scripts
 sudo ./install-ninka.sh
 cd /usr/local/bin
 echo /usr/local/bin
-ls
-sudo ./ninka ~/fossology/LICENSE
+sudo mv ninka ~/
 
 exit $?

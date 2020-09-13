@@ -32,6 +32,8 @@ cp Hello_World_Program/app Hello_World/usr/bin
 cp Hello_World_Program/app Hello_World/usr/bin
 
 dpkg-deb --build Hello_World
+
+RET=$?
 ls
 
-exit 0
+exit $RET
