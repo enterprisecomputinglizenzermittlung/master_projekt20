@@ -16,10 +16,10 @@ install:
     - ls
     - cd Install_Scripts
     - ls
-    - sudo ./Clone_Repositories.sh
-    - sudo ./Scancode_Install.sh
-    - sudo ./Tern_Install.sh
-    - sudo ./Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
+    - bash Clone_Repositories.sh
+    - bash Scancode_Install.sh
+    - bash Tern_Install.sh
+    - bash Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
 
 jobs:
