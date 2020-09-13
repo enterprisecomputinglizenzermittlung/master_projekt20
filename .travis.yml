@@ -12,6 +12,7 @@ before_install:
     - sudo apt-get update
 
 install:
+    - cd Install_Scripts
     - bash Clone_Repositories.sh
     - bash Scancode_Install.sh
     - bash Tern_Install.sh
