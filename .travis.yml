@@ -12,15 +12,20 @@ before_install:
     - sudo apt-get update
 
 install:
+    - pwd
+    - ls
     - cd Install_Scripts
+    - ls
     - bash Clone_Repositories.sh
     - bash Scancode_Install.sh
     - bash Tern_Install.sh
     - bash Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
+    - cd ..
 
 
 jobs:
   include:
     - stage: test
       script: 
+        - cd Test_Scripts
         - bash Test_Scripts/Test.sh
