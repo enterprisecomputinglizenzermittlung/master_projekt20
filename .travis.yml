@@ -12,9 +12,9 @@ before_install:
     - sudo apt-get update
 
 install:
-    - ./Install_Scripts/Clone_Repositories.sh
-    - ./Install_Scripts/Scancode_Install.sh
-    - ./Install_Scripts/Tern_Install.sh
-    - ./Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
+    - sudo ./Install_Scripts/Clone_Repositories.sh
+    - sudo ./Install_Scripts/Scancode_Install.sh
+    - sudo ./Install_Scripts/Tern_Install.sh
+    - sudo ./Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
 
