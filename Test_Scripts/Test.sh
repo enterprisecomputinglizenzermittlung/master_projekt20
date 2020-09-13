@@ -13,9 +13,9 @@ echo cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 
 echo Append Apache License text to src
-echo /* >> Hello_World_Program/src/main.cpp
+echo \/\* >> Hello_World_Program/src/main.cpp
 cat Licenses/Apache_2.0 >> Hello_World_Program/src/main.cpp
-echo */ >> Hello_World_Program/src/main.cpp
+echo \*\/ >> Hello_World_Program/src/main.cpp
 cat Hello_World_Program/src/main.cpp
 
 echo Copy Code to Package dir
