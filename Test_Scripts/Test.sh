@@ -2,7 +2,7 @@ cd ..
 sudo apt-get install build-essential
 
 ls
-mkdir -p ~/Hello_World
+mkdir -p ~/hello-world
 
 echo cp Package_Creation_Sources/* ~/
 cp -r Package_Creation_Sources/* ~/
@@ -14,7 +14,7 @@ make
 ls
 
 echo create DEBIAN Dir
-cd ../Hello_World
+cd ../hello-world
 mkdir DEBIAN
 ls
 
@@ -39,11 +39,10 @@ ls
 cd ..
 
 echo copy program to bin
-cp Hello_World_Program/app Hello_World/usr/bin
+echo cp Hello_World_Program/app hello-world/usr/bin
+cp Hello_World_Program/app hello-world/usr/bin
 
-cp Hello_World_Program/app Hello_World/usr/bin
-
-dpkg-deb --build Hello_World
+dpkg-deb --build hello-world
 
 RET=$?
 ls
