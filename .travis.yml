@@ -26,4 +26,4 @@ jobs:
   include:
     - stage: test
       script: 
-        -bash Test_Scripts/Test.sh
+        - bash Test_Scripts/Test.sh
