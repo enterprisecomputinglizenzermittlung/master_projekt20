@@ -7,6 +7,15 @@ mkdir -p ~/hello-world
 echo cp Package_Creation_Sources/* ~/
 cp -r Package_Creation_Sources/* ~/
 
+echo Copy License to Code
+cd ~
+echo cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
+cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
+
+echo Copy Code to Package dir
+echo cp -r Hello_World_Program/ hello-world/
+cp -r Hello_World_Program/ hello-world/
+
 echo Make Hello_World_Program
 echo cd ~/Hello_World_Program
 cd ~/Hello_World_Program
@@ -43,9 +52,17 @@ echo copy program to bin
 echo cp Hello_World_Program/app hello-world/usr/bin
 cp Hello_World_Program/app hello-world/usr/bin
 
+echo copy code to src
+echo cp Hello_World_Program/ hello-world/usr/bin
+
+echo Create Package
 dpkg-deb --build hello-world
 
 RET=$?
+ls
+
+echo Extract Package
+ar x hello-world.deb
 ls
 
 exit $RET
