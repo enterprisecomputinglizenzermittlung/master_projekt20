@@ -13,8 +13,9 @@ echo cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 
 echo Copy Code to Package dir
-echo cp -r Hello_World_Program/ hello-world/
-cp -r Hello_World_Program/ hello-world/
+echo cp -r Hello_World_Program/ hello-world/[renamed to xy]
+cp -r Hello_World_Program/ xy/
+mv xy/ hello-world/xy
 
 echo Make Hello_World_Program
 echo cd ~/Hello_World_Program
