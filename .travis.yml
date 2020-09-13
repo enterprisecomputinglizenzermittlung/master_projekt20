@@ -17,7 +17,7 @@ install:
     - cd Install_Scripts
     - ls
     - bash Clone_Repositories.sh
-    #- bash Scancode_Install.sh
+    - bash Scancode_Install.sh
     - bash Tern_Install.sh
     - bash Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
@@ -25,4 +25,5 @@ install:
 jobs:
   include:
     - stage: test
-      script: ./Install_Scripts/Tern_Install.sh
+      script: 
+        -bash Test_Scripts/Test.sh
