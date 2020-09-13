@@ -5,9 +5,9 @@ ls
 mkdir -p ~/Hello_World
 
 echo cp Package_Creation_Sources/* ~/
-cp Package_Creation_Sources/* ~/
+cp -r Package_Creation_Sources/* ~/
 
-echo Make Hello World Program
+echo Make Hello_World_Program
 echo cd ~/Hello_World_Program
 cd ~/Hello_World_Program
 make
