@@ -13,20 +13,20 @@ Repo zum Testen der Lizenzermittlungstools mit Travis CI
 ## Kommandos für die testausführung
 
  * ### ScanCode
-  * ./extractcode [Paket]
-  * ./scancode -clip --json-pp - [Paket]
+./extractcode [Paket] <br>
+./scancode -clip --json-pp - [Paket]
 
  * ### Tern
-  * sudo tern report -i [Container-Image]
+sudo tern report -i [Container-Image]
 
  * ### Tern with ScanCode Extension
-  *sudo tern report -x scancode -i [Container-Image]
+sudo tern report -x scancode -i [Container-Image]
 
  * ### Nomos
-  * ./nomos [Datei]
+./nomos [Datei]
 
  * ### Ninka
-  * ./ninka [Datei]
+./ninka [Datei]
 
 Viele Späße beim Arbeiten wünschen euch
 * Andreas Zahn
