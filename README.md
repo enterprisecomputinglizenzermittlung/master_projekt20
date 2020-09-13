@@ -1,12 +1,14 @@
 # master_projekt20
 Repo zum Testen der Lizenzermittlungstools mit Travis CI
 
-# Erklärung der jeweiligen Ordner & Files:
--> [.travis.yml File:] Dieses File beschreibt den Aufbau der Travis CI Testumgebung. Dabei ist es notwendig, dass dieses File im Rootverzeichnis liegen bleibt, da Travis CI dies so vorgibt. Die Beschreibung dieses Files kann aus der Dokumentation entnommen werden.
+## Erklärung der jeweiligen Ordner & Files:
+* ### Files
+** **.travis.yml File**: Dieses File beschreibt den Aufbau der Travis CI Testumgebung. Dabei ist es notwendig, dass dieses File im Rootverzeichnis liegen bleibt, da Travis CI dies so vorgibt. Die Beschreibung dieses Files kann aus der Dokumentation entnommen werden.
 
--> [Ordner Test_Scripts:] In diesem Ordner werden die Test Scripte gespeichert. Dabei existiert ein Script welches ein .rpm-Paket erstellt und ihm die GPL 3.0 Lizenz hinzufügt. Dieses Script dient als Vorlage für alle folgenden Pakete. Außerdem sind Scripte zur Durchführung von Tests auf den jeweiligen Tools definiert. Diese werden ebenfalls in Travis CI ausgeführt
+* ### Ordner
+** **Ordner Test_Scripts**: In diesem Ordner werden die Test Scripte gespeichert. Dabei existiert ein Script welches ein .rpm-Paket erstellt und ihm die GPL 3.0 Lizenz hinzufügt. Dieses Script dient als Vorlage für alle folgenden Pakete. Außerdem sind Scripte zur Durchführung von Tests auf den jeweiligen Tools definiert. Diese werden ebenfalls in Travis CI ausgeführt
 
--> [Ornder Install_Scripts:] In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
+** **Ornder Install_Scripts**: In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
 
 
 [TODO: Test-Commandos rausnehmen]
