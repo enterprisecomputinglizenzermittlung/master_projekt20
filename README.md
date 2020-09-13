@@ -8,7 +8,7 @@ Repo zum Testen der Lizenzermittlungstools mit Travis CI
 * ### Ordner
   * **Test_Scripts**: In diesem Ordner werden die Test Scripte gespeichert. Dabei existiert ein Script welches ein .rpm-Paket erstellt und ihm die GPL 3.0 Lizenz hinzufügt. Dieses Script dient als Vorlage für alle folgenden Pakete. Außerdem sind Scripte zur Durchführung von Tests auf den jeweiligen Tools definiert. Diese werden ebenfalls in Travis CI ausgeführt
 
-  * ** Install_Scripts**: In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
+  * **Install_Scripts**: In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
 
 
 ##TODO: Test-Commandos rausnehmen
