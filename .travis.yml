@@ -13,10 +13,10 @@ before_install:
 
 install:
     - pwd
-    - sudo ./Install_Scripts/Clone_Repositories.sh
-    - sudo ./Install_Scripts/Scancode_Install.sh
-    - sudo ./Install_Scripts/Tern_Install.sh
-    - sudo ./Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
+    - sudo ./home/travis/build/enterprisecomputinglizenzermittlung/master_projekt20/Install_Scripts/Clone_Repositories.sh
+    - sudo ./home/travis/build/enterprisecomputinglizenzermittlung/master_projekt20/Install_Scripts/Scancode_Install.sh
+    - sudo ./home/travis/build/enterprisecomputinglizenzermittlung/master_projekt20/Install_Scripts/Tern_Install.sh
+    - sudo ./home/travis/build/enterprisecomputinglizenzermittlung/master_projekt20/Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
 
 jobs:
