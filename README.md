@@ -10,6 +10,9 @@ Repo zum Testen der Lizenzermittlungstools mit Travis CI
 
   * **Install_Scripts**: In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
 
+Viele Späße beim Arbeiten wünschen euch
+Andreas Zahn & Jean-Luc Kittel
+(betreut wurde das ganze von Peter Wilke)
 
 ## TODO: Test-Commandos rausnehmen
 
