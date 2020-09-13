@@ -9,7 +9,7 @@ cp -r Package_Creation_Sources/* ~/
 
 echo Copy GPL3.0 License File to Code
 cd ~
-echo cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
+ls
 cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 
 echo Create Package Base Dir
@@ -31,12 +31,12 @@ echo Compile Hello_World_Program
 cd ~/Hello_World_Program
 make
 
-echo Copy Control File for Creation
+echo Move Control File for Creation
 cd $PACKAGE_BASE_DIR
 mkdir DEBIAN
 cd DEBIAN
+mv ~/Package_Creation_Files/deb_control $PACKAGE_BASE_DIR/DEBIAN/control
 ls
-cp -p ~/Package_Creation_Files/deb_control $PACKAGE_BASE_DIR/DEBIAN
 
 echo Create usr/bin directory for executable program
 mkdir -p usr/bin
