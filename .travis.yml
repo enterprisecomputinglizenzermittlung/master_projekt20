@@ -18,3 +18,7 @@ install:
     - sudo ./Install_Scripts/Fossology_Toolkit_-_Ninka_and_Nomos_Install.sh
 
 
+jobs:
+  include:
+    - stage: test
+      script: ./Install_Scripts/Tern_Install.sh
