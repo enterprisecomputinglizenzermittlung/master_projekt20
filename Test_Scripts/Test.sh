@@ -20,7 +20,7 @@ ls
 
 echo create control file
 touch DEBIAN/control
-echo Package: Hello_World > DEBIAN/control
+echo Package: hello-world > DEBIAN/control
 echo Version: 1.0 >> DEBIAN/control
 echo Section: custom >> DEBIAN/control
 echo Priority: optional >> DEBIAN/control
@@ -29,6 +29,7 @@ echo Essential: no >> DEBIAN/control
 echo Installed-Size: 1024 >> DEBIAN/control
 echo Maintainer: FAU >> DEBIAN/control
 echo Description: Print Hello World on the console >> DEBIAN/control
+echo  >> DEBIAN/control
 cat DEBIAN/control
 
 mkdir usr
