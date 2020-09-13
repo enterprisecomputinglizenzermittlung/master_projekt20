@@ -6,7 +6,7 @@ sudo python3 -m venv scanenv
 
 echo Step 2: Activate Python3 Venv for Tern+Scancode
 cd scanenv
-source bin/activate
+sudo bash bin/activate
 
 echo Step 3: Install Tern and Scancode Toolkit
 sudo python3 -m pip install tern scancode-toolkit
