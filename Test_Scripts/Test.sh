@@ -14,8 +14,8 @@ cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 
 echo Create Copyright File for Debian Package
 mkdir -p ~/hello-world/usr/share/doc/package/
-cp Licenses/GPL_3.0 ~/usr/share/doc/package/copyright
-cat ~/usr/share/doc/package/copyright
+cp Licenses/GPL_3.0 ~/hello-world/usr/share/doc/package/copyright
+cat ~/hello-world/usr/share/doc/package/copyright
 
 echo Append Apache License text to src
 echo \/\* >> Hello_World_Program/src/main.cpp
