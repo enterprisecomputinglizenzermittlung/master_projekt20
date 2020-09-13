@@ -28,4 +28,4 @@ jobs:
     - stage: test
       script: 
         - cd Test_Scripts
-        - bash Test_Scripts/Test.sh
+        - bash Test.sh
