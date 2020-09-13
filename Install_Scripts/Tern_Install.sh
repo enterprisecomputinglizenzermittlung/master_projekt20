@@ -7,6 +7,8 @@ sudo apt-get install python3-setuptools
 sudo apt-get install python3-wheel
 sudo apt-get install python3-pip#
 
+ls
+
 echo Calling Tern_Standalone installation script...
 sudo . ./Tern_Standalone_Install.sh
 
