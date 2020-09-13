@@ -10,25 +10,25 @@ Repo zum Testen der Lizenzermittlungstools mit Travis CI
 
   * **Install_Scripts**: In diesem Ordner sind alle wichtigen Install Scripte gespeichert. Diese Scripte werden in Travis CI ausgeführt. Die Reihenfolge der Scripts ist dabei im .travis.yml-File beschrieben. Für jedes Tool existiert ein eigenes Installationscript
 
+## Kommandos für die testausführung
+
+ * ### ScanCode
+./extractcode [Paket]
+./scancode -clip --json-pp - [Paket]
+
+ * ### Tern
+sudo tern report -i [Container-Image]
+
+ * ### Tern with ScanCode Extension
+sudo tern report -x scancode -i [Container-Image]
+
+ * ### Nomos
+./nomos [Datei]
+
+ * ### Ninka
+./ninka [Datei]
+
 Viele Späße beim Arbeiten wünschen euch
 * Andreas Zahn
 * Jean-Luc Kittel
 * Peter Wilke (Betreuer)
-
-#Kommandos für die testausführung
-
-##ScanCode
-./extractcode [Paket]
-./scancode -clip --json-pp - [Paket]
-
-##Tern
-sudo tern report -i [Container-Image]
-
-##Tern with ScanCode Extension
-sudo tern report -x scancode -i [Container-Image]
-
-##Nomos
-./nomos [Datei]
-
-##Ninka
-./ninka [Datei]
