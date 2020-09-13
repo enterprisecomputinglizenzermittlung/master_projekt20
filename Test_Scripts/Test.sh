@@ -12,16 +12,19 @@ cd ~
 echo cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 cp Licenses/GPL_3.0 Hello_World_Program/LICENSE
 
+echo Create Copyright File for Debian Package
+mkdir -p /usr/share/doc/package/
+cp Licenses/GPL_3.0 /usr/share/doc/package/copyright
+cat /usr/share/doc/package/copyright
+
 echo Append Apache License text to src
 echo \/\* >> Hello_World_Program/src/main.cpp
 cat Licenses/Apache_2.0 >> Hello_World_Program/src/main.cpp
 echo \*\/ >> Hello_World_Program/src/main.cpp
-cat Hello_World_Program/src/main.cpp
 
 echo Copy Code to Package dir
-echo cp -r Hello_World_Program/ hello-world/[renamed to xy]
-cp -r Hello_World_Program/ xy/
-mv xy/ hello-world/xy
+echo cp -r Hello_World_Program/ hello-world/
+cp -r Hello_World_Program/ hello-world/
 
 echo Make Hello_World_Program
 echo cd ~/Hello_World_Program
@@ -58,9 +61,6 @@ cd ..
 echo copy program to bin
 echo cp Hello_World_Program/app hello-world/usr/bin
 cp Hello_World_Program/app hello-world/usr/bin
-
-echo copy code to src
-echo cp Hello_World_Program/ hello-world/usr/bin
 
 echo Create Package
 dpkg-deb --build hello-world
