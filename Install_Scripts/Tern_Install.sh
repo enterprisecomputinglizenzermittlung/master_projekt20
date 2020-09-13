@@ -5,7 +5,7 @@ sudo apt-get install attr
 sudo apt-get install python3.6
 sudo apt-get install python3-setuptools
 sudo apt-get install python3-wheel
-sudo apt-get install python3-pip#
+sudo apt-get install python3-pip
 
 ls
 
