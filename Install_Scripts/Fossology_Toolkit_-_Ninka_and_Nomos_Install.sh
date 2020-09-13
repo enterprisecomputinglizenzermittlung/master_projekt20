@@ -15,7 +15,7 @@ echo Step 3: Install Fossology
 
 
 echo Step 4: Run postinstall script
-#sudo /usr/local/lib/fossology/fo-postinstall
+sudo /usr/local/lib/fossology/fo-postinstall
 
 echo Step 5: Check installed correctly
 #sudo /usr/local/etc/fossology/mods-enabled/scheduler/agent/fo_scheduler -t
