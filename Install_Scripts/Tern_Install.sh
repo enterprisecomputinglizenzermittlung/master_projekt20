@@ -8,8 +8,8 @@ sudo apt-get install python3-wheel
 sudo apt-get install python3-pip#
 
 echo Calling Tern_Standalone installation script...
-sudo ./Tern_Standalone_Install.sh
+sudo . ./Tern_Standalone_Install.sh
 
 echo Calling Tern_With_ScanCode_Extension installation script...
-sudo ./Tern_with_Scancode_Install.sh
+sudo . ./Tern_with_Scancode_Install.sh
 
