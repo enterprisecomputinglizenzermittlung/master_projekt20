@@ -31,7 +31,7 @@ echo Maintainer: FAU >> DEBIAN/control
 echo Description: Print Hello World on the console >> DEBIAN/control
 cat DEBIAN/control
 
-mkdir /usr/bin
+mkdir usr/bin
 ls
 cd ..
 
