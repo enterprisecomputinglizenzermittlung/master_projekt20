@@ -1,4 +1,6 @@
 PACKAGE_BASE_DIR=~/hello-world
+TEST_SCRIPTS_DIR=$PWD
+PACKAGE=~/hello-world.deb
 
 echo Install prerequisites
 sudo apt-get install build-essential
@@ -48,6 +50,18 @@ cp Hello_World_Program/app $PACKAGE_BASE_DIR/usr/bin
 echo Create Package
 dpkg-deb --build hello-world
 
-RET=$?
+echo Executing Test Scans
+RET=0
+cd $TEST_SCRIPTS_DIR
+sudo bash Execute_Ninka_Scan.sh $PACKAGE_BASE_DIR/Hello_World_Program/LICENSE
+RET=$(expr $? + $RET)
+sudo bash Execute_Nomos_Scan.sh $PACKAGE_BASE_DIR/Hello_World_Program/LICENSE
+RET=$(expr $? + $RET)
+sudo bash Execute_ScanCode_Scan.sh $PACKAGE
+RET=$(expr $? + $RET)
+sudo bash Execute_Tern_Scan.sh
+RET=$(expr $? + $RET)
+sudo bash Execute_Tern_With_ScanCode_Scan.sh
+RET=$(expr $? + $RET)
 
 exit $RET

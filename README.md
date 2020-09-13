@@ -15,19 +15,20 @@ Viele Späße beim Arbeiten wünschen euch
 * Jean-Luc Kittel
 * Peter Wilke (Betreuer)
 
-## TODO: Test-Commandos rausnehmen
+#Kommandos für die testausführung
 
-Commands for test execution:
-./ninka File 
-.
-/nomos File
-.
-/extractcode ~/build/enterprisecomputinglizenzermittlung/master_projekt20/emacs-common-non-dfsg_26.1+1-1_all.deb
+##ScanCode
+./extractcode [Paket]
+./scancode -clip --json-pp - [Paket]
 
-./scancode -clip --json-pp - ~/build/enterprisecomputinglizenzermittlung/master_projekt20/emacs-common-non-dfsg_26.1+1-1_all.deb-extract
+##Tern
+sudo tern report -i [Container-Image]
 
-sudo tern report -o output.txt -i debian:buster
+##Tern with ScanCode Extension
+sudo tern report -x scancode -i [Container-Image]
 
-cat output.txt
+##Nomos
+./nomos [Datei]
 
-sudo tern report -x scancode -i debian:buster
+##Ninka
+./ninka [Datei]
