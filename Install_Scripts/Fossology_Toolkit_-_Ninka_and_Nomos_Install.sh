@@ -8,7 +8,7 @@ echo Step 2: Build Fossology
 make
 
 echo Step 2.5: Install Composer
-#sudo ./utils/install_composer.sh
+sudo ./utils/install_composer.sh
 
 echo Step 3: Install Fossology
 #sudo make install
