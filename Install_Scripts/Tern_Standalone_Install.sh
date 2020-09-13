@@ -6,7 +6,7 @@ sudo python3 -m venv ternenv
 
 echo Step 2: Activate Python3 Venv 
 cd ternenv
-sudo source bin/activate
+sudo bash bin/activate
 
 echo Step 3: Install Tern
 sudo python3 -m pip install tern
